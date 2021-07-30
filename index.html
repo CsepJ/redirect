@@ -4,7 +4,8 @@
 </head>
 <body>
 <script>
-document.write(window.location.search);
+const link = new URLSearchParams(window.location.search);
+document.write(link);
 </script>
 </body>
 </html>
