@@ -2,9 +2,7 @@
 <html>
 <head>
 <script>
-if(!window.location.pathname == "/"){
-window.location.href = window.location.pathname.replace("/","");
-}
+document.write(window.location.path.replace("/",""));
 </script>
 </head>
 <body>
