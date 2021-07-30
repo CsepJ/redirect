@@ -4,8 +4,12 @@
 </head>
 <body>
 <script>
+if(window.location.href == "/"){
+document.write("Redirect");
+}else{
 const link = new URLSearchParams(window.location.search);
-document.write(link);
+window.location.replace(link);
+}
 </script>
 </body>
 </html>
